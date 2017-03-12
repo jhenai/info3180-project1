@@ -1,3 +1,25 @@
-body {
-    padding-top: 50px;
+.profile{
+    width: 60%;
+    margin-top: 60px;
+    
+    background-color: #cccccc;
+    border-radius: 15px;
+    
+}
+
+img{
+    float: left;
+    border-radius: 4px;
+    padding: 7px;
+    width: 40%;
+    height: 90%;
+}
+
+.info{
+    float: left;
+    padding-left: 15px;
+}
+
+.bold{
+    font-weight: bold;
 }

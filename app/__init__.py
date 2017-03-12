@@ -4,8 +4,9 @@ from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = "change this to be a more random key"
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://lab5:123@localhost/lab5"
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:123@localhost/facebook"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True # added just to suppress a warning
+UPLOAD_FOLDER = "./app/static/uploads"
 
 
 db = SQLAlchemy(app)
@@ -15,4 +16,4 @@ login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = "login"
 app.config.from_object(__name__)
-from app import views
+from app import views, models

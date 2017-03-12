@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+
+{% for user in users %}
+<li> <a href= "{{ url_for('show_user', userid= user.userid) }}">{{ user.firstname }} {{ user.lastname }} </a></li>
+
+{% endfor %}
+
+
+
+{% endblock %}

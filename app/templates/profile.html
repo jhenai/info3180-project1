@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<div class="container profile">
+    <img class="avatar_pic" src="/static/uploads/{{pic}}">
+    
+    <div class ="info">
+        <h1> {{firstname}} {{lastname}}</h1><br>
+        <h5><span class="bold">Profile Created On:</span> {{date}} </h5><br>
+        
+        
+        <span class='bold'>User ID: </span> {{userid}} <br>
+        <span class='bold'>Username: </span> {{username}} <br>
+
+        <span class='bold'>Gender: </span> {{gender}} <br>
+        <span class='bold'>Age: </span> {{age}} <br>
+        
+        <br>
+        {{bio}}
+    
+    </div>
+    
+</div>
+
+
+
+
+{% endblock %}
